@@ -1,0 +1,39 @@
+
+/*colores*/
+$naranjo: #f37121;
+$morado:  #654062;
+$rosado:  #c70039;
+$azul: #111d5e;
+$limon: #c0e218;
+$azulcielo:#1a508b;
+
+/*fuente*/
+$fuente: 'Anton', sans-serif;
+
+@mixin tamano($width)  {
+
+	width: $width;
+	
+}
+@mixin tamanofuente($font-size) {
+
+	font-size: $font-size;
+	
+}
+
+*{
+	margin: 0px;
+	padding:0px;
+	box-sizing: border-box;
+}
+/*----------header--------*/
+
+@import "header";
+
+/*-----------main----------*/
+
+@import "main";
+
+/*-------footer-------*/
+
+@import "footer";

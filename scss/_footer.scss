@@ -1,0 +1,35 @@
+.boxfooter{
+	background-image: linear-gradient(to bottom, $naranjo, $rosado);
+	width: 100%;
+	height:200px;	
+}
+
+.redessociales{
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end; 
+
+}
+
+.redessociales a{
+	font-family: $fuente;
+	text-decoration: none;
+	color: $naranjo;
+	@include tamanofuente(20px);
+	margin: 15px;
+}
+.redessociales li{
+	list-style: none;
+}
+
+.boxcomentario{
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	margin: 15px;
+}
+.comentario{
+	color: $azulcielo;
+	font-family: $fuente;
+	@include tamanofuente(20px);
+}
