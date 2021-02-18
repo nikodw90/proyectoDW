@@ -25,7 +25,7 @@ h3{
 	border-radius: 40px;
 
 }
-.galeria{
+.imagennt1{
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
 	width: 95%;
@@ -34,23 +34,24 @@ h3{
 	padding: 40px 0;
 	overflow: hidden;
 }
-.galeria > a{
-	display: block;
-	position: relative;
-	overflow: hidden;
-	box-shadow: 0 0 6px rgba(0, 0, 0, .5);
-}
-.galeria img{
-	width: 100%;
+
+
+.imagennt1 div img{
+	width: 95%;
 	vertical-align: top;
 	height: 300px;
 	object-fit: cover;
 	transition: transform 0.5s;
+
 }
-.galeria a:hover img{
+.imagennt1 div:hover img{
 	filter: blur(2px);
-	transform: rotate(10deg) scale(1.3);
+	transform: rotate(5deg) scale(1.0);
+	 
 }
+
+
+
 
 .box1tab{
 	margin: 10px 10px 10px 10px;
