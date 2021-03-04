@@ -3,11 +3,11 @@
 
 /*colores*/
 $naranjo: #f37121;
-$morado:  #654062;
+$morado:  #111d5e;
 $rosado:  #c70039;
 $azul: #111d5e;
 $limon: #c0e218;
-$azulcielo:#1a508b;
+$azulcielo:#111d5e;
 
 /*fuente*/
 $fuente: 'Anton', sans-serif;
@@ -27,6 +27,16 @@ $fuente: 'Anton', sans-serif;
 	margin: 0px;
 	padding:0px;
 	box-sizing: border-box;
+}
+
+body{
+	background-image: url(../imagen/imgfondo.jpg);
+	background-size: cover;
+	min-height: 100vh;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: fixed;
+	
 }
 
 /*----------header--------*/

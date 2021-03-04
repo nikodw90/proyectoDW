@@ -18,7 +18,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
 </head>
-<body class="body">
+<body>
 	<header class="Fondo">
 		<h1 class="titulo">Dj's Club</h1>
 		<h2 class="subtitulo">Tu fiesta, al ritmo que tu quieras!!</h2>
@@ -30,10 +30,10 @@
 			<div class="d-flex align-items-start">
 				<nav>
 					<div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-					<a class="nav-link active box1tab" id="v-pills-home-tab" data-bs-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">Nuestra Mision</a>
-					<a class="nav-link box1tab" id="v-pills-profile-tab" data-bs-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false">Djs</a>
-					<a class="nav-link box1tab" id="v-pills-messages-tab" data-bs-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-selected="false">Musica</a>
-					<a class="nav-link box1tab" id="v-pills-settings-tab" data-bs-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-selected="false">Contacto</a>
+						<a class="nav-link active box1tab" id="v-pills-home-tab" data-bs-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">Nuestra Mision</a>
+						<a class="nav-link box1tab" id="v-pills-profile-tab" data-bs-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false">Djs</a>
+						<a class="nav-link box1tab" id="v-pills-messages-tab" data-bs-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-selected="false">Musica</a>
+						<a class="nav-link box1tab" id="v-pills-settings-tab" data-bs-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-selected="false">Contacto</a>
 			    	</div>
 				</nav>
 
@@ -41,7 +41,7 @@
 					
 					<!-------Pagina 1 Nuestra Mision------>
 
-						<div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
+						<div class="tab-pane fade show active desenfoque" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
 
 							<h2 class="parrafo1">NUESTRA MISION</h2>
 
@@ -58,22 +58,93 @@
 
 					<!-----------pagina 2 Djs------->
 
-					<div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
+					<div class="tab-pane fade desenfoque" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
 						
 						<h2 class="parrafo1">Djs</h2>
 
 						<article class="parrafo1">Lista de djs disponibles</article>
-						<p class="parrafo1">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-							consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-							cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-						proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+
+						<div class="djscontenedor">
+							
+							<div class="djs">
+								<div class="demo">
+							   		<img class="imgdjs" src="imagen/dj2.jpg" alt="Dj1" />
+								</div>  
+								<div class="text">
+							  		<h3>Alicia Belonio</h3>
+							  		<a href="https://www.instagram.com"><img src="imagen/instagram.png"></a>
+									<a href="https://www.facebook.com"><img src="imagen/facebook.png"></a>
+									<a href="https://www.twitter.com"><img src="imagen/twitter.png"> </a>
+							  	</div> 
+						  	</div>
+
+							<div class="djs">
+								<div class="demo">
+							   		<img class="imgdjs" src="imagen/dj6.jpg" alt="Dj2" />
+								</div>  
+								<div class="text">
+							  		<h3>Francisco Huarte</h3>
+							  		<a href="https://www.instagram.com"><img src="imagen/instagram.png"></a>
+									<a href="https://www.facebook.com"><img src="imagen/facebook.png"></a>
+									<a href="https://www.twitter.com"><img src="imagen/twitter.png"> </a>
+							  	</div> 
+						  	</div>
+							  
+							<div class="djs">
+								<div class="demo">
+							   		<img class="imgdjs" src="imagen/djs5.jpg" alt="dj3" />
+								</div>  
+								<div class="text">
+							  		<h3>Gustabo Pizarro</h3>
+							  		<a href="https://www.instagram.com"><img src="imagen/instagram.png"></a>
+									<a href="https://www.facebook.com"><img src="imagen/facebook.png"></a>
+									<a href="https://www.twitter.com"><img src="imagen/twitter.png"> </a>
+							  	</div> 
+						  	</div>
+
+							<div class="djs">
+								<div class="demo">
+							   		<img class="imgdjs" src="imagen/dj1.jpg" alt="dj4" />
+								</div>  
+								<div class="text">
+							  		<h3>Adele Torres</h3>
+							  		<a href="https://www.instagram.com"><img src="imagen/instagram.png"></a>
+									<a href="https://www.facebook.com"><img src="imagen/facebook.png"></a>
+									<a href="https://www.twitter.com"><img src="imagen/twitter.png"> </a>
+							  	</div> 
+						  	</div>
+							
+							  <div class="djs">
+								<div class="demo">
+							   		<img class="imgdjs" src="imagen/djs3.jpg" alt="dj5" />
+								</div>  
+								<div class="text">
+							  		<h3>Bastian Carvajal</h3>
+							  		<a href="https://www.instagram.com"><img src="imagen/instagram.png"></a>
+									<a href="https://www.facebook.com"><img src="imagen/facebook.png"></a>
+									<a href="https://www.twitter.com"><img src="imagen/twitter.png"> </a>
+							  	</div> 
+						  	</div>
+							
+							  <div class="djs">
+								<div class="demo">
+							   		<img class="imgdjs" src="imagen/dj4.jpg" alt="dj6" />
+								</div>  
+								<div class="text">
+							  		<h3>Mariele Arriaz</h3>
+							  		<a href="https://www.instagram.com"><img src="imagen/instagram.png"></a>
+									<a href="https://www.facebook.com"><img src="imagen/facebook.png"></a>
+									<a href="https://www.twitter.com"><img src="imagen/twitter.png"> </a>
+							  	</div> 
+						  	</div>
+						</div>
+
+
 					</div>
 
 					<!---------pagina 3 Musica-------->
 
-					<div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">
+					<div class="tab-pane fade desenfoque" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">
 
 						<h2 class="parrafo1">MUSICA</h2>
 						
@@ -110,7 +181,7 @@
 
 					<!---------pagina 4 Contacto------->
 
-					<div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">
+					<div class="tab-pane fade desenfoque" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">
 						<form>
 							<div class="gridcontacto">	
 								<div class="columna1">
@@ -150,12 +221,12 @@
 											<input type="reset" name="reset" value="BORRAR">
 										</div>
 									</div>
-								</form>
-								<hr>
-							</div>
-						</div>
+						</form>
+						<hr>
 					</div>
 				</div>
+			</div>
+		</div>
 				
 				<!---------Multimedia------>
 
@@ -168,15 +239,15 @@
 					</li>
 
 				</ul>
-				<div class="tab-content boxmultimedia" id="myTabContent">
+				<div class="tab-content boxmultimedia desenfoque" id="myTabContent">
 					<div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
 						<div class="box2">				
 							<h3 class="animacion">Videos <h3>
 								<iframe width="560" height="315" src="https://www.youtube.com/embed/M9QT7CmuJYM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 								<iframe width="560" height="315" src="https://www.youtube.com/embed/6V1AWaPGgpk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 								<iframe width="560" height="315" src="https://www.youtube.com/embed/v6JdhRviUCc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-							</div>	
-						</div>
+						</div>	
+					</div>
 						<div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
 							<div class="box3">
 								<h3 class="animacion">Galeria</h3>
@@ -221,7 +292,7 @@
 							<form>
 								<label for="textarea" class="comentario">deja tu comentario!!</label>
 								<textarea name="enviar"></textarea>
-								<input type="submit" name="enviar" value="enviar">
+								<button type="submit" name="enviar" value="enviar" class="btn btn-primary boxcomentario">Enviar</button>
 							</form>
 						</div>
 
@@ -230,5 +301,5 @@
 					<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
 					<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
 
-				</body>
+</body>
 </html>
