@@ -5,7 +5,7 @@
 	background-repeat: no-repeat;
 	background-position: center;
 	background-attachment: fixed;
-	
+	box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
 
 	
 }
@@ -42,6 +42,16 @@ h3{
 	
 	
 }
+.icono{
+	width: 25px;
+	
+}
+.icono2{
+	width: 25px;
+	padding-bottom: 20px;
+}
+
+
 
 .imagennt{
 	@include tamano(300px);
@@ -74,39 +84,29 @@ h3{
 }
 
 
-
-
 .box1tab{
-	margin: 10px 10px 10px 10px;
-	background-color: $rosado;
+	margin: 10px;
+	background: $rosado;
 	color:$naranjo;
 	font-family: $fuente;
-	list-style: none;
-	text-decoration: none;
-}
-.box1 li a {
-	color:$naranjo;
-	font-family: $fuente;
-	text-decoration: none;
-	@include tamanofuente(20px);
-
-}
-.box1 ul{
-	list-style: none;	
-	display:flex; 
-	flex-direction: row;
-	justify-content: space-evenly;  
 
 }
 
-
+.box1tab:hover{
+	background: cornsilk;
+	color: $rosado;
+	
+}
 
 .parrafo1{
 	color:$morado;
 	font-family: $fuente;
 	text-align: center;
 	@include tamanofuente(20px);
-	letter-spacing: 1px
+	letter-spacing: 1px;
+	padding-top: 20px;
+	
+
 }
 .parrafo1texto .parrafo1{
 	margin-bottom:25%;
@@ -132,34 +132,32 @@ h3{
 	
 }
 
-.gridcontacto{
-	display: grid;
-	width: 500px;
-	height:400px;
-	grid-template-columns: 200px 200px;
-	grid-template-rows: 40px 40px;
-	justify-content: center;
-	margin-bottom: 50px;
-	
-}
-.columna1{
-	display: grid;
-	grid-auto-rows: 60px 70px 70px 70px 70px 70px;
-	grid-gap: 3px;
-
-}
-.texto{
+form{
+	width: 450px;
+	height: 600px;
+	padding: 10px 20px;
+	box-sizing: border-box;
 	font-family: $fuente;
-	color: $naranjo;
+}
+h4{
+	background: rgba(0, 0, 0, 0.2);
+	color: white;
+	font-family: $fuente;
+	@include tamanofuente(10px);
 	text-align: center;
-	padding-top: 10px;
-	background-color: $rosado;
-
+	
+}
+input, textarea{
+	width: 100%;
+	padding-bottom: 10px;
+	padding: 7px;
+	box-sizing: border-box;
+		
 }
 
-.columna2{
-	display: grid;
-	grid-auto-rows: 60px 70px 70px 70px 70px 70px;
-	grid-gap: 3px;
-	
+
+@media (max-width:600px) {
+	form{
+		width: 100%;
+	}
 }
