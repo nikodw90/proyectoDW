@@ -16,7 +16,7 @@ body {
 /*----------header--------*/
 .titulo {
   font-family: "Anton", sans-serif;
-  color: #c0e218;
+  color: #18c4e2;
   text-align: center;
   font-size: 50px;
   padding-top: 10px; }
@@ -44,9 +44,10 @@ body {
   text-align: center; }
 
 h3 {
-  color: #969190;
+  color: #e9e6e5;
   font-family: "Anton", sans-serif;
-  font-size: 10px; }
+  font-size: 10px;
+  background: rgba(0, 0, 0, 0.2); }
 
 .djscontenedor {
   display: flex;
@@ -60,18 +61,32 @@ h3 {
   height: 250px;
   border-radius: 50%;
   margin: 20px;
-  border: 5px solid #969190; }
+  border: 3px solid #e9e6e5; }
 
 .icono {
-  width: 25px; }
+  width: 25px;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  transition: 0.3s; }
+
+.icono:hover {
+  background: #e9e6e5; }
 
 .icono2 {
   width: 25px;
-  padding-bottom: 20px; }
+  text-align: center;
+  border-radius: 5px;
+  transition: 0.3s;
+  margin-bottom: 20px; }
+
+.icono2:hover {
+  background: #e9e6e5; }
 
 .imagennt {
   width: 300px;
-  border-radius: 40px; }
+  border-radius: 40px;
+  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2); }
 
 .imagennt1 {
   display: grid;
@@ -104,16 +119,13 @@ h3 {
   color: #787a7a75; }
 
 .parrafo1 {
-  color: #969190;
+  color: #e9e6e5;
   font-family: "Anton", sans-serif;
   text-align: center;
   font-size: 20px;
   letter-spacing: 1px;
-  padding-top: 20px; }
-
-.parrafo1texto .parrafo1 {
-  margin-bottom: 25%;
-  width: 50%; }
+  padding-top: 20px;
+  background: rgba(0, 0, 0, 0.281); }
 
 .boxmultimedia {
   display: flex;
@@ -125,59 +137,146 @@ h3 {
 .box2 iframe {
   width: 400px; }
 
-.animacion {
-  color: #969190;
-  font-family: "Anton", sans-serif;
-  text-decoration: none;
-  font-size: 20px; }
-
 form {
-  width: 450px;
-  height: 600px;
-  padding: 10px 20px;
-  box-sizing: border-box;
-  font-family: "Anton", sans-serif; }
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column; }
+
+form input:focus,
+form textarea:focus {
+  outline-color: #3498db; }
+
+form input, form textarea {
+  font-family: "Anton", sans-serif;
+  width: 500px;
+  font-size: 1.0625rem;
+  background: #787a7a75;
+  padding-left: 10px;
+  border: 1px solid #787a7a75; }
 
 h4 {
   background: rgba(0, 0, 0, 0.2);
-  color: white;
+  color: #e9e6e5;
   font-family: "Anton", sans-serif;
   font-size: 10px;
   text-align: center; }
 
-input, textarea {
+form button {
+  font-family: "Anton", sans-serif;
+  height: 40px;
   width: 100%;
-  padding-bottom: 10px;
-  padding: 7px;
-  box-sizing: border-box; }
+  border: none;
+  outline: none;
+  background: #787a7a75;
+  font-size: 1.0625rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.3s; }
 
-@media (max-width: 600px) {
-  form {
-    width: 100%; } }
+form button:hover {
+  background: #e9e6e5; }
 
 /*-------footer-------*/
-.redessociales {
+.footer {
+  position: fixed;
+  bottom: 0px;
+  width: 100%; }
+
+.contenidofooter {
   display: flex;
-  flex-direction: row;
-  justify-content: flex-end; }
+  max-width: 100%; }
 
-.redessociales a {
-  font-family: "Anton", sans-serif;
-  text-decoration: none;
+.contenidofooter .box {
+  flex-basis: 50%;
+  padding: 10px 20px; }
+
+.box h4 {
+  letter-spacing: 2px;
+  font-size: 25px;
+  font-weight: 600;
+  text-transform: uppercase; }
+
+.box .contenido {
+  margin: 20px 0 0 0; }
+
+.izquierdo .contenido p {
+  text-align: justify; }
+
+.parrafo2 {
   color: #e9e6e5;
-  font-size: 20px;
-  margin: 15px; }
-
-.redessociales li {
-  list-style: none; }
-
-.boxcomentario {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  margin: 15px; }
-
-.comentario {
-  color: #e9e6e5;
   font-family: "Anton", sans-serif;
-  font-size: 20px; }
+  font-size: 15px;
+  background: rgba(0, 0, 0, 0.281);
+  letter-spacing: 2px; }
+
+.izquierdo .contenido .redessociales {
+  margin: 20px 0 0 0; }
+
+.izquierdo .contenido .redessociales a {
+  padding: 0 2px; }
+
+.izquierdo .contenido .redessociales a img {
+  width: 25px;
+  line-height: 40px;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  transition: 0.3s; }
+
+.izquierdo .contenido .redessociales a img:hover {
+  background: #e9e6e5; }
+
+.centro .contenido img {
+  background: rgba(0, 0, 0, 0.281);
+  border-radius: 10%;
+  transition: 0.3s;
+  cursor: pointer;
+  height: 30px;
+  width: 30px; }
+
+.centro .contenido img:hover {
+  background: #e9e6e5; }
+
+.derecho form .mensaje {
+  margin-top: 10px; }
+
+.derecho form input, .derecho form textarea {
+  width: 100%;
+  font-size: 1.0625rem;
+  background: #787a7a75;
+  padding-left: 10px;
+  border: 1px solid #787a7a75; }
+
+.derecho form input:focus,
+.derecho form textarea:focus {
+  outline-color: #3498db; }
+
+.derecho form input {
+  height: 35px; }
+
+.derecho form .boton {
+  margin-top: 10px; }
+
+.derecho form .boton button {
+  height: 40px;
+  width: 100%;
+  border: none;
+  outline: none;
+  background: #787a7a75;
+  font-size: 1.0625rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.3s; }
+
+.derecho form .boton button:hover {
+  background: #e9e6e5; }
+
+@media screen and (max-width: 900px) {
+  .footer {
+    position: relative;
+    bottom: 0px; }
+  .contenidofooter {
+    flex-wrap: wrap;
+    flex-direction: column; }
+  .contenidofooter .box {
+    margin: 5px 0; } }

@@ -1,30 +1,117 @@
-
-.redessociales{
+.footer{
+	position: fixed;
+	bottom: 0px;
+	width: 100%;
+}
+.contenidofooter {
 	display: flex;
-	flex-direction: row;
-	justify-content: flex-end; 
-
+	max-width: 100%;		
+}
+.contenidofooter .box{
+	flex-basis: 50%;
+	padding: 10px 20px;
+}
+.box h4{
+	letter-spacing: 2px;
+	font-size: 25px;
+	font-weight: 600;
+	text-transform: uppercase;
+}
+.box .contenido{
+	margin: 20px 0 0 0;
 }
 
-.redessociales a{
+.izquierdo .contenido p{
+	text-align: justify;
+}
+
+.parrafo2{
+	color:$blanco;
 	font-family: $fuente;
-	text-decoration: none;
-	color: $naranjo;
-	@include tamanofuente(20px);
-	margin: 15px;
-}
-.redessociales li{
-	list-style: none;
+	font-size:15px ;
+	background: rgba(0, 0, 0, 0.281) ;
+	letter-spacing: 2px;
 }
 
-.boxcomentario{
-	display: flex;
-	flex-direction: row;
-	justify-content: flex-start;
-	margin: 15px;
+.izquierdo .contenido .redessociales{
+	margin:20px 0 0 0 ;
 }
-.comentario{
-	color: $azulcielo;
-	font-family: $fuente;
-	@include tamanofuente(20px);
+.izquierdo .contenido .redessociales a{
+	padding: 0 2px;
+}
+.izquierdo .contenido .redessociales a img{
+	width: 25px;
+	line-height: 40px;
+	text-align: center;
+	background: rgba(0, 0, 0, 0.2); ;
+	border-radius: 5px;
+	transition: 0.3s;
+}
+.izquierdo .contenido .redessociales a img:hover{
+	background: $blanco;
+}
+
+.centro .contenido img{
+	background: rgba(0, 0, 0, 0.281) ;
+	border-radius: 10%;
+	transition: 0.3s;
+	cursor: pointer;
+	height: 30px;
+	width: 30px;
+
+}
+.centro .contenido img:hover{
+	background: $blanco;
+}
+.derecho form .mensaje{
+	margin-top: 10px;
+
+}
+.derecho form input, .derecho form textarea{
+	width: 100%;
+	font-size: 1.0625rem;
+	background: $gris;
+	padding-left: 10px;
+	border: 1px solid $gris
+}
+.derecho form input:focus,
+.derecho form textarea:focus{
+	outline-color: #3498db;
+}
+ 
+
+.derecho form input{
+	height: 35px;
+
+}
+.derecho form .boton{
+	margin-top: 10px;
+}
+.derecho form .boton button{
+	height: 40px;
+	width: 100%;
+	border: none;
+	outline: none;
+	background: $gris;
+	font-size: 1.0625rem;
+	font-weight: 500;
+	cursor: pointer;
+	transition: 0.3s;
+}
+.derecho form .boton button:hover{
+	background: $blanco;
+}
+@media screen and ( max-width: 900px){
+	.footer{
+		position: relative;
+		bottom: 0px;
+	}
+	.contenidofooter{
+		flex-wrap: wrap;
+		flex-direction: column;
+	}
+	.contenidofooter .box{
+		margin: 5px 0;
+
+	}
 }
